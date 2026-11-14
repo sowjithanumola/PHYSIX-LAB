@@ -1,0 +1,6 @@
+{
+  "name": "PHYSIX LAB",
+  "description": "Interactive browser-based physics simulation laboratory for gravity, fluid dynamics, electromagnetism, optics, chaos theory, molecular physics, and rigid-body mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

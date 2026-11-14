@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #070B14;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+}
+
+.lab-grid-bg {
+  background-image:
+    linear-gradient(to right, rgba(30, 41, 59, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.35) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.lab-grid-fine {
+  background-image:
+    linear-gradient(to right, rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.06) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom precision range slider */
+input[type="range"].lab-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #1E293B;
+  outline: none;
+}
+
+input[type="range"].lab-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: #06B6D4;
+  border: 1px solid #67E8F9;
+  cursor: pointer;
+}
+
+input[type="range"].lab-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background: #06B6D4;
+  border: 1px solid #67E8F9;
+  cursor: pointer;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B101B;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
